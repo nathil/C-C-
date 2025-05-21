@@ -71,3 +71,85 @@ int main() {
 
     printf("O valor do fatorial de %d é: %d", valor,  fatorial(&valor)); 
 }
+
+//questões do dia 21/05
+
+//questão 01 
+
+#include <stdio.h>
+
+int main() {
+    int valores[10], i, soma = 0, soma_Var; 
+    float media, variancia;
+    
+    for(i=0; i<10; i++){
+        printf("informe um valor:"); 
+        scanf("%d", &valores[i]); 
+        
+        soma += valores[i]
+    }
+    media = soma/10; 
+    
+    for(i=0; i<10; i++){
+        soma_Var += pow(valores[i] - media,2); 
+    }
+    
+    variancia = soma_Var/10; 
+    
+    printf("\n O valor da média é:%f", media);
+    printf("\n O valor da variância é:%f", variância);
+}
+//questão 2
+#include <stdio.h>
+
+int main() {
+    int numeros[20], i;
+    
+    for(i=0; i<20; i++){
+        printf("Insira um valor:"); 
+        scanf("%d", &numeros[i]); 
+    }
+    for(i=0; i<20; i++){
+        if(i>10){
+            printf("\n%d", numeros[i]);
+        }
+    }
+}
+//questão 3
+#include <stdio.h>
+
+int main() {
+    int i, valores[100]; 
+    
+    for(i=0; i<100; i++){
+        printf("Insira um valor:"); 
+        scanf("%d", &valores[i]);
+    }
+    for(i=0; i<100; i++){
+        if(valores[i] % 2 != 0){
+            printf("\nÉ ímpar:%d", valores[i]); 
+        }
+    }
+}
+//questão 04
+#include <stdio.h>
+
+int main() {
+    int i, vetor1[10], vetor2[10], vetor3[10]; 
+    
+    for(i=0; i<10; i++){
+        printf("Insira um valor:"); 
+        scanf("%d", &vetor1[i]);
+    }
+    for(i=0; i<10; i++){
+        printf("Insira um valor:"); 
+        scanf("%d", &vetor2[i]);
+    }
+    for(i=0; i<10; i++){
+        vetor3[i] = vetor1[i]+vetor2[i]; 
+    }
+    for(i=0; i<10; i++){
+        printf("\n%d", vetor3[i]); 
+    }
+}
+//n! = n * (n-1)! (fórmula recursiva fatorial)
