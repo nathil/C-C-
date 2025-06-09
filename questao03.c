@@ -25,5 +25,5 @@ int main(){
         printf("Insira o valor:"); 
         scanf("%f", &vetor[i]); 
     }
-    printf("O valor da média das notas é:%.2f\n", media(vetor, 5));      
+    printf("O valor da média das notas é:%.2f\n", media(vetor, tamanho));      
 }

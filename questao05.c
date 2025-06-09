@@ -1,7 +1,6 @@
 //Ler um número inteiro e apresentar: NUMERO=xx, QUADRADO=xx e RAIZ QUADRADA=xx
 
 #include <stdio.h>
-#include <stdlib.h>
 #include <math.h>
 
 int main(){
