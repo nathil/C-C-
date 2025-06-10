@@ -14,7 +14,7 @@ int main(){
     printf("Informe a aceleracao:"); 
     scanf("%f", &aceleracao); 
     printf("Informe o instante:"); 
-    scanf("%f", instante); 
+    scanf("%f", &instante); 
 
     posicao_form = (pos_inicial + vel_inicial + (aceleracao*pow(instante,2)))/2; 
     velocidade_form = vel_inicial + (aceleracao*instante); 
